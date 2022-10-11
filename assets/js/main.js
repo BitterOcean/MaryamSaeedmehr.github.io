@@ -66,6 +66,22 @@
   }
 
   /**
+   * Go to next button
+   */
+   let gotonext = select('.go-to-next')
+   if (gotonext) {
+     const toggleGoToNext = () => {
+       if (window.scrollY < 100) {
+         gotonext.classList.add('active')
+       } else {
+         gotonext.classList.remove('active')
+       }
+     }
+     window.addEventListener('load', toggleGoToNext)
+     onscroll(document, toggleGoToNext)
+   }
+
+  /**
    * Back to top button
    */
   let backtotop = select('.back-to-top')
@@ -89,9 +105,10 @@
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
+  
 
   /**
-   * Scrool with ofset on links with a class name .scrollto
+   * Scroll with ofset on links with a class name .scrollto
    */
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
@@ -128,6 +145,16 @@
       preloader.remove()
     });
   }
+
+  /**
+   * Leaddown
+   */
+   let leaddown = select('#leaddown');
+   if (leaddown) {
+     window.addEventListener('load', () => {
+       leaddown.remove()
+     });
+   }
 
   /**
    * Hero type effect
