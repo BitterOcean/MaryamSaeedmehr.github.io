@@ -46,9 +46,9 @@
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-star"></i> <span>Skills</span></a></li>
-        <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        <li><a href="https://drive.google.com/file/d/1kTv8VYHZcKxqQhg06VJ0o6ckuTxYbTAT/view" class="nav-link scrollto"><i class="bx bx-download"></i> <span>Download CV</span></a></li>
+        <li><a href="https://drive.google.com/file/d/1Y_pdd_RqyIBcAPb-FGFdEjZVxrfBWNqO/view?usp=sharing" class="nav-link scrollto"><i class="bx bx-download"></i> <span>Download CV</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -58,7 +58,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Maryam Saeidmehr</h1>
-      <p>I'm <span class="typed" data-typed-items="a Student, a Developer, an Engineer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="a Student, a Developer, an Engineer, a Researcher"></span></p>
       <div class="social-links">
         <a title="gmail" href="mailto:maryamsaeidmehr@gmail.com" class="gmail" target="_blank" rel="noopener"><i class="bx bxl-gmail"></i></a>
         <a title="github" href="https://github.com/BitterOcean/" class="github" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
@@ -84,7 +84,7 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Junior ML Researcher</h3>
+            <h3>Machine Learning Researcher</h3>
             <p class="fst-italic">
               Hi there, my name is Maryam Saeidmehr. I have recently graduated with a bachelor's degree in computer engineering
               from the Isfahan University of Technology.My areas of interest are <b>machine learning</b>, <b>deep learning</b>,
@@ -106,6 +106,16 @@
                 </ul>
               </div>
             </div>
+            <p>
+              I am a Researcher and Developer experienced in designing and developing innovative software, user interfaces, 
+              querying and data managing. Moreover, I am familiar with AI infrastructure, software architecture and design 
+              patterns and experienced applying them in a reliable program.
+              <br />
+              I have a deep interest in Machine Learning disciplines, cutting-edge technologies, learning, and advancement to 
+              solve real-world problems so that everybody would have a high-quality life as well as a better world. I try to 
+              identify, understand and translate program requirements into robust and reliable solutions through high-level 
+              languages (Python, C/C++).
+            </p>
           </div>
         </div>
       </div>
@@ -210,17 +220,20 @@
                 <li>C/C++ (5+ years)</li>
                 <li>Python (4+ years)</li>
                 <li>SQL (3+ years)</li>
+                <li>HTML, CSS (2+ years)</li>
                 <li>Javascript (2+ years)</li>
                 <li>MATLAB (1+ year)</li>
                 <li>R (less than a year)</li>
               </ul>
             </div>
             
-            <h4 class="resume-title">Languages</h3>
+            <h4 class="resume-title">Other Skills</h4>
               <div class="resume-item">
                 <ul>
-                  <li>Persian (Mother Tongue)</li>
-                  <li>English (Foreign Lanuage)</li>
+                  <li>Team Working</li>
+                  <li>Attention to detail</li>
+                  <li>Communication</li>
+                  <li>Presentation</li>
                 </ul>
               </div>
 
@@ -249,6 +262,14 @@
                 <h4>Databases</h4>
                 <p>MySql, SQL Server, PostgreSql, MariaDB, SQLite</p>
               </div>
+            
+              <h4 class="resume-title">Languages</h3>
+                <div class="resume-item">
+                  <ul>
+                    <li>Persian (Mother Tongue)</li>
+                    <li>English (Foreign Lanuage)</li>
+                  </ul>
+                </div>
 
           </div>
 
@@ -258,17 +279,27 @@
     </section><!-- End Skills Section -->
 
 
-    <!-- ======= Projects Section ======= -->
-    <section id="projects" class="portfolio section-bg">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Projects</h2>
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-ai">Image Processing</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-ai">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -277,7 +308,7 @@
                   A Django-Reactjs Web App which can detect COVID-19 from CT Scan Images using CNN based on DenseNet121
                 </p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="zoom-in"><i class="bx bx-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Covid19-Detector"><i class="bx bx-zoom-in"></i></a>
                   <a href="https://bitterocean.github.io/Covid19-Detector/" target="_blank" rel="noopener" title="website"><i class="bx bx-link"></i></a>
                   <a href="Portfolio1-Details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="project details"><i class="bx bx-info-circle"></i></a>
                 </div>
@@ -285,7 +316,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-6 col-md-6 portfolio-item filter-ai">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -295,16 +326,46 @@
                   pixel concentration and compares its NC results against JPEG attack with non-adaptive methods' ones.
                 </p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="zoom-in"><i class="bx bx-zoom-in"></i></a>
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Image Watermarking in DCT Domain"><i class="bx bx-zoom-in"></i></a>
                   <a href="Portfolio2-Details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="project details"><i class="bx bx-info-circle"></i></a>
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>FileMarket</h4>
+                <p>FileMarket Website</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="FileMarket"><i class="bx bx-zoom-in"></i></a>
+                  <a href="Portfolio3-Details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="project details"><i class="bx bx-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Election System</h4>
+                <p>Election System Website</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Election System"><i class="bx bx-zoom-in"></i></a>
+                  <a href="Portfolio4-Details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="project details"><i class="bx bx-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section><!-- End Portfolio Section -->  
+
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -388,9 +449,6 @@
       <div id="update" class="update"></div>
       <div class="copyright">
         &copy; Copyright <strong><span>Maryam Saeidmehr</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">bootstrapmade</a>
       </div>
     </div>
   </footer><!-- End Footer -->
