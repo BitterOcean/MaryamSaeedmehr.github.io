@@ -476,7 +476,7 @@
   <!-- Last Upddate -->
   <script>
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    date = new Date();
+    date = new Date(document.lastModified);
     year = date.getFullYear();
     month = months[date.getMonth()];
     day = date.getDate();
