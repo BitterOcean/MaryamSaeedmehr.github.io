@@ -253,15 +253,17 @@
   });
 
   var media = document.getElementById("video")
-  media.addEventListener("play", () => {
-    slider.autoplay.stop();
-  });
-  media.addEventListener("pause", () => {
-    slider.autoplay.start();
-  });
-  media.addEventListener("end", () => {
-    slider.autoplay.start();
-  });
+  if (media) {
+    media.addEventListener("play", () => {
+      slider.autoplay.stop();
+    });
+    media.addEventListener("pause", () => {
+      slider.autoplay.start();
+    });
+    media.addEventListener("end", () => {
+      slider.autoplay.start();
+    });
+  }
 
   /**
    * Testimonials slider
