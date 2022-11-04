@@ -238,7 +238,7 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  var slider = new Swiper('.portfolio-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -250,6 +250,17 @@
       type: 'bullets',
       clickable: true
     }
+  });
+
+  var media = document.getElementById("video")
+  media.addEventListener("play", () => {
+    slider.autoplay.stop();
+  });
+  media.addEventListener("pause", () => {
+    slider.autoplay.start();
+  });
+  media.addEventListener("end", () => {
+    slider.autoplay.start();
   });
 
   /**
