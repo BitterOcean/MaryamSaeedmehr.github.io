@@ -542,6 +542,44 @@ section {
   margin-bottom: 0;
 }
 
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.resume .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.resume .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--theme-complementry-color);
+}
+
+.resume .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.resume .progress-bar-wrap {
+  background: var(--theme-nav-menu-focus);
+}
+
+.resume .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: var(--theme-color);
+}
+
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
